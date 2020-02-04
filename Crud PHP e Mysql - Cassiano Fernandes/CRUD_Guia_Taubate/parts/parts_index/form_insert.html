@@ -1,0 +1,39 @@
+<div class="card col-12 mt-5 mx-auto pt-2 p-0 bg-light border border-warning rounded">
+	<img src="img/logo_deitado.png" id='logo_cadastro' class="img-card-top img-fluid d-block mx-auto" alt="guia Taubaté cadastro de clientes">
+	<div class="card-body">
+		<form class='p-2' id='form_insert'>
+			<legend class="text-center text-secondary">Guia Taubaté - Cadastro de clientes</legend>
+			<div class="form-row mb-3">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<label for='nome_cliente'><i class="fas fa-user mr-3 text-primary"></i> Nome do cliente</label>
+					<input type="text" name="nome_cliente" id="nome_cliente" autofocus="on" class='form-control'>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<label for='nome_empresa'><i class="fas fa-building mr-3 text-primary"></i> Nome da empresa</label>
+					<input type="text" name="nome_empresa" id="nome_empresa" class='form-control'>
+				</div>
+			</div>
+			<div class="form-row mb-3">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<label for='email_cliente'><i class="fas fa-at mr-3 text-primary"></i> Email</label>
+					<input type="email" name="email_cliente" id="email_cliente" autofocus="on" class='form-control'>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<label for='contato_empresa'><i class="fas fa-mobile-alt mr-3 text-primary"></i> Telefone para contato</label>
+					<input type="tel" name="contato_empresa" maxlength="15" id="contato_empresa" class='form-control'>
+				</div>
+			</div>
+
+			<div class="form-row mb-3">
+				<div class="col-12">
+					<label for='mensagem_empresa'><i class="fas fa-envelope-open-text mr-3 text-primary"></i> Mensagem</label>
+					<textarea name="mensagem_empresa" id='mensagem_empresa' class='form-control' ></textarea>
+				</div>
+			</div>
+			<div class="form-row">
+				<input type="submit" class='btn btn-success d-block ml-auto mt-2' value='Enviar'>
+			</div>
+		</form>
+		<div class="alert w-100 text-center font-weight-bold" id='alerta_insert'></div>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+<div class="modal fade" id="modal_editar_cliente" tabindex="-1" aria-hidden="true" role="dialog" arialabelledby="modal_editar_cliente">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="mx-auto">Editar dados do usuário</h3>
+				<button type="button" id="btn_atualizar_login" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+			</div>
+			<div class="modal-body">
+				<form id="atualizar_cliente">
+					<div class="form-row mb-3">
+						<input type="hidden" name="id_cliente_editar" id="id_cliente_editar" value="">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<label for="nome_editar">Nome do Cliente</label>
+							<input type="text" name="nome_editar" id="nome_editar" class="form-control">
+							<small class='text-danger font-weight-bold alert_atualizar'>* Preenchimento obrigatório</small>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<label for="empresa_editar">Nome da empresa</label>
+							<input type="text" name="empresa_editar" id="empresa_editar" class="form-control">
+							<small class='text-danger font-weight-bold alert_atualizar'>* Preenchimento obrigatório</small>
+						</div>							
+					</div>
+					<div class="form-row mb-3">						
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<label for="email_editar">Email da empresa</label>
+							<input type="email" name="email_editar" id="email_editar" class="form-control">
+							<small class='text-danger font-weight-bold alert_atualizar'>* Preenchimento obrigatório</small>
+						</div>							
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<label for="contato_editar">Contato do Cliente</label>
+							<input type="tel" name="contato_editar" id="contato_editar" class="form-control">
+							<small class='text-danger font-weight-bold alert_atualizar'>* Preenchimento obrigatório</small>
+						</div>
+					</div>
+					<diiv class="form-row mb-3">
+						<div class="col-12">
+							<label for='mensagem_editar'><i class="fas fa-envelope-open-text mr-3 text-primary"></i> Mensagem</label>
+					 		<textarea name="mensagem_editar" id='mensagem_editar' class='form-control' ></textarea>
+						</div>
+					</diiv>
+					<div class="row mt-5">
+						<input type ="submit" class="btn btn-primary font-weight-bold ml-auto mr-3" id="submit_atualizar" value="Atualizar">
+						<button class="btn btn-warning font-weight-bold mr-3 text-white" id="btn_fechar_atualizar" data-dismiss="modal">Fechar</button>
+					</div>
+				</form>
+				<div id="alerta_atualizar_cliente" class="alert w-100 font-weight-bold text-center mt-3" role="alert"></div>
+			</div>			
+		</div>
+	</div>
+</div>

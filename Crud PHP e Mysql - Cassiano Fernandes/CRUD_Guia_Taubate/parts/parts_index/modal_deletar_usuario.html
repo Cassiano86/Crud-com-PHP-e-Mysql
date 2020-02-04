@@ -1,0 +1,26 @@
+<div class="modal fade" id="modal_excluir_cliente" tabindex="-1" role="dialog" aria-hidden="true" arialabelledby="modal_excluir_cliente">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="text-dark font-weight-bold">Excluir este usuário?</h5>
+				<h2 class="mx-auto modal_cabecalho_info font-weight-bold"></h2>
+				<button type="button" id="btn_atualizar_login" class="close d-block" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true" class='text-dark'>&times;</span>
+		        </button>
+			</div>
+			<div class="modal-body">
+				<p class="text-dark font-weight-bold texto_body_excluir">O usuário selecionado será excluído permanentemente dos registros do Guia taubaté.</p>					
+				<div id="alerta_excluir_cliente" class="alert mt-3"></div>
+				<span class="text-danger font-weight-bold mr-auto">Deseja continuar?</span>
+				<form id="form_excluir">
+					<input type="hidden" name="id_excluir" id="id_excluir" >
+					<div class="row">
+						<input type="submit" name="btn_excluir" class="btn btn-primary font-weight-bold ml-auto mr-3" id="btn_excluir" value="Sim">
+						<div class="btn btn-warning font-weight-bold text-white mr-3" id="btn_fechar_excluir" data-dismiss="modal">Não</div>
+					</div>
+				</form>
+				<div id="alerta_deletar_cliente" class="alert w-100 font-weight-bold text-center mt-3" role="alert"></div>			
+			</div>
+		</div>
+	</div>
+</div>
