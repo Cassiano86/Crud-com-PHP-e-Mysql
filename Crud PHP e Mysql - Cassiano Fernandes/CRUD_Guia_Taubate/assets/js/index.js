@@ -39,7 +39,7 @@ $(function(){
 
 	$('.btn_atualizar_cliente').on('click',function(){
 		let id = $(this).val();
-			$('#modal_editar_cliente').modal('show');
+			
 		$.ajax({
 			url : 'classes/models/modelCrud.php',
 			method : 'post',
